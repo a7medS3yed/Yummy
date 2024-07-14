@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="css/main.css">
+  
+
+    <title>Yummy</title>
+</head>
+<body class="bg-black">
+
+
+    <div class="load position-fixed top-0 bottom-0 start-0 end-0 bg-black ">
+        <span class="loader"></span>
+    </div>
+
+   
+
+   
+
+     <!----------------------- slidebar ----------------------->
+   
+
+     <section id="slide-bar">
+        <div class="d-flex h-100">
+            <div class="slide-items bg-black   ">
+                <a href="#search" id="searchs" class="animate__fadeOutUp">Search</a>
+                <a href="#categories" id="categories"class="animate__fadeOutUp">Categories</a>
+                <a href="#area" id="areas"class="animate__fadeOutUp">Area</a>
+                <a href="#ingredients" id="ingredients"class="animate__fadeOutUp">Ingredients</a>
+                <a href="#contact" id="contacts"class="animate__fadeOutUp">Contact Us</a>
+                <div class="slide-items-foot text-white ">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                    <p class="max-w-200">Copyright © 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+            <div class="slide-selector bg-white">
+                <img src="../Img/logo.png" alt="logo" width="50px">
+                <div class="open-close">
+                    <i class="fa-solid open-close-icon fa-2x fa-x close d-none"></i>
+                    <i class="fa-solid open-close-icon fa-2x fa-align-justify open"></i>
+                </div>
+                <div class="slide-select-foot">
+                    <i class="fa-solid fa-globe d-block"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+
+            </div>
+        </div>
+     </section>
+
+      <!----------------------- end slidebar ----------------------->
+
+
+
+      <!-- ----------------------search------------------------- -->
+
+     <section id="search">
+        <div class="container">
+            <div class="row g-3 p-5" id="rowSearch">
+                <div class="col">
+                  <input type="text" class="form-control form-control-sm" placeholder="Search by name" aria-label="First name" id="searchInp">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control form-control-sm " placeholder="Search by first letter" aria-label="Last name" id="searchFInp"maxlength="1">
+                </div>
+              </div>
+        </div>
+        <div class="row" id="restult">
+    
+        </div>
+
+     </section>
+
+      <!-- ----------------------End search------------------------- -->
+
+      <section id="category" class="mt-5">
+        <div class="container">
+            <div class="row" id="rowCategory">
+            </div>
+            <div class="row" id="rowCategoryDetalis"></div>
+            <div class="row text-white"id="rowMealsDetalis">
+              
+           </div>
+        </div>
+      </section>
+
+
+      <section id="area">
+        <div class="container">
+            <div class="row text-white g-4" id="rowAreas">
+            </div>
+            <div class="row" id="rowAreasDetalis"></div>
+        </div>
+      </section>
+      
+      <!-- /////////////Ingredients///////////////// -->
+
+      <section id="ingredient">
+        <div class="container">
+            <div class="row g-4 p-2" id="rowIngredients">
+                
+            </div>
+            <div class="row" id="rowngredientsDetalis"></div>
+        </div>
+      </section>
+
+      <!-- /////////////End Ingredients///////////////// -->
+
+
+      <!-- ------------------------Contact us----------------------------- -->
+
+            <section id="contact"class="d-none">
+            <form action="">
+                <div class="container">
+                    
+                    <div class="row g-3 p-5">
+                        <div class="col-md-6 mb-3 ">
+                          <input type="text" class="form-control form-control-sm" id="nameInp" placeholder="Enter Your Name" name="nameInp" placeholder="Fnter Your Name" aria-label="First name">
+                          <div class=" alert alert-danger my-2 d-none ">
+                            Special characters and numbers not allowed 
+                        </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <input type="email" class="form-control form-control-sm" placeholder="Enter your email" aria-label="Last name" id="emailInp" name="emailInp" >
+                          <div class=" alert alert-danger my-2 d-none ">
+                            Email not valid *exemple@yyy.zzz 
+                        </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <input type="text" class="form-control form-control-sm" placeholder="Enter your phone" aria-label="Last name" id="phoneInp" name="phoneInp" >
+                          <div class=" alert alert-danger my-2 d-none ">
+                            Enter valid Phone Number 
+                        </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <input type="text" class="form-control form-control-sm" placeholder="Enter your age" aria-label="Last name" id="ageInp" name="ageInp" >
+                          <div class=" alert alert-danger my-2 d-none ">
+                            Enter valid age 
+                        </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <input type="password" class="form-control form-control-sm" placeholder="Enter your password" aria-label="Last name" id="passInp" name="passInp" >
+                          <div class=" alert alert-danger my-2 d-none ">
+                            Enter valid password *Minimum eight characters, at least one letter and one number:* 
+                        </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <input type="password" class="form-control form-control-sm" placeholder="Repassword" aria-label="Last name" id="repassInp" name="repassInp" >
+                          <div class=" alert alert-danger my-2 d-none ">
+                            Enter valid repassword 
+                        </div>
+                        </div>
+                      
+                      </div>
+                      <button class="d-block m-auto btn btn-danger disabled">Submit</button>
+                </div>
+            </form>
+            </section>
+
+      <!-- ------------------------End Contact us----------------------------- -->
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/home.js" type="module"></script>
+    
+</body>
+</html>
